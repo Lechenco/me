@@ -7,12 +7,15 @@ header {
     color: white;
     padding-top: 30px;
     text-align: center;
-    height: 145px;
+    height: 9em;
     box-shadow: 0px 1px 5px black;
+    background-image: url(../../../../assets/Grid.svg);
+    background-size: 35em;
 }
 
 .header-container {
     max-width: 800px;
+    width: 80%;
     margin: 0px auto;
 }
 
@@ -67,4 +70,26 @@ a.link-menu {
     text-align: center;
     text-decoration: none;
     font-weight: 100;
+    font-size: 1rem;
+    line-height: 1.8em;
+}
+
+@media (max-width: 700px) and (min-width: 500px) {
+    h1 {
+        font-size: 3rem;
+        line-height: 1.5em;
+        padding-bottom: 5px
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 2.5rem;
+        line-height: 1.1em;
+        padding-bottom: 5px
+    }
+
+    ul.list-menu {
+        display: none; 
+    }
 }
